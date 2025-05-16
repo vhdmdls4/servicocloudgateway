@@ -20,8 +20,8 @@ public class ServicocloudgatewayApplication {
 		return builder
 				.routes()
 				.route(route -> route.path("/api/client/**").uri("lb://servicoclientes"))
-				.route(route -> route.path("/api/credit_card/**").uri("lb://servicocartoes"))
-				.route(route -> route.path("/api/avalia_credito/**").uri("lb://servicoavaliacredito"))
+				.route(route -> route.path("/api/credit-card/**").uri("lb://servicocartoes"))
+				.route(route -> route.path("/api/credit-evaluator/**").uri("lb://servicoavaliacredito"))
 				.build();
 	}
 }
